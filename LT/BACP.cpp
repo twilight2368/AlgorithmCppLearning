@@ -31,9 +31,9 @@ bool Check(int semester, int subject){
     return true;
 }
 
-void Solution(int N){
+void Solution(int M){
     int max_load = 0;
-    for (int i = 1; i <= N; i++)
+    for (int i = 1; i <= M; i++)
     {
         max_load = max(max_load, total_load[i]);
     }
@@ -52,8 +52,7 @@ void Try(int subject, int M, int N){
 
             if (subject == N)
             {
-                Solution(N);  
-                //cout << load_min << endl;           
+                Solution(M);     
             }else
             {
                 if (total_load[i] < load_min)
@@ -97,10 +96,9 @@ int main()
         }
     }
 
-    
-    
-
     Try(1, M, N);
 
     cout << load_min << endl;
 }
+
+
