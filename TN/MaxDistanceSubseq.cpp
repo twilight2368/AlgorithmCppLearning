@@ -17,10 +17,7 @@ bool checkReq(int n, int distance, int c){
        {
           j++;
        }
-
     
-       
-       
    }
    
    
